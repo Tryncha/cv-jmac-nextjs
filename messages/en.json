@@ -1,0 +1,16 @@
+{
+  "Header": {
+    "titles": "Chemistry PhD, Master in Engineering - Chemical Engineering, and Chemical Engineer",
+    "address": "Spain | Colombia"
+  },
+  "LinksNavbar": {
+    "vitae": "Vitae",
+    "projects": "Projects",
+    "publications": "Publications",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "design": "Design and code",
+    "info": "Content and audiovisual material"
+  }
+}

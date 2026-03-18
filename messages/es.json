@@ -1,0 +1,16 @@
+{
+  "Header": {
+    "titles": "Doctor en Química, Máster en Ingeniería - Ingeniería Química, e Ingeniero Químico",
+    "address": "España | Colombia"
+  },
+  "LinksNavbar": {
+    "vitae": "Vitae",
+    "projects": "Proyectos",
+    "publications": "Publicaciones",
+    "contact": "Contacto"
+  },
+  "Footer": {
+    "design": "Diseño y código",
+    "info": "Contenido y material audiovisual"
+  }
+}

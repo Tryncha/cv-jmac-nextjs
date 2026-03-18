@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "files.exclude": {
+    "**/.git": false
+  },
+  "i18n-ally.localesPaths": ["messages", "src/i18n"],
+  "i18n-ally.keystyle": "nested"
+}
