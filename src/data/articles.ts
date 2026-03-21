@@ -1,0 +1,403 @@
+import type { ArticleData } from '../types';
+
+const articles: ArticleData[] = [
+  {
+    id: 10,
+    imgSrc: 'images/articles/10-aliento.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [],
+    journal: {
+      name: 'The Conversation',
+      url: 'https://theconversation.com/us'
+    },
+    authors: ['Villa, M.', 'Aguirre, J.M.', 'Valero, E.'],
+    doi: '10.64628/AAO.pc95pckk9',
+    es: {
+      title: 'Lo que el aliento puede decir de nuestra salud',
+      abstract:
+        'Aunque invisible al ojo humano, el aliento es un espejo de lo que ocurre a diario en nuestro cuerpo y puede indicar la presencia de enfermedad. La breatómica es la nueva ciencia que lo estudia.',
+      keywords: [],
+      date: 'Feb, 2026'
+    },
+    en: {
+      title: 'Tatuajes que salvarán vidas',
+      abstract:
+        'Aunque invisible al ojo humano, el aliento es un espejo de lo que ocurre a diario en nuestro cuerpo y puede indicar la presencia de enfermedad. La breatómica es la nueva ciencia que lo estudia.',
+      keywords: [],
+      date: 'Feb, 2026'
+    }
+  },
+  {
+    id: 9,
+    imgSrc: 'images/articles/09-tatuajes.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [
+      {
+        name: 'Miriam Villa Díaz',
+        url: ''
+      }
+    ],
+    journal: {
+      name: 'The Conversation',
+      url: 'https://theconversation.com/us'
+    },
+    authors: ['Villa, M.', 'Aguirre, J.M.', 'Valero, E.'],
+    doi: '10.64628/AAO.urjgeqn5s',
+    es: {
+      title: 'Tatuajes que salvarán vidas',
+      abstract:
+        'Los tatuajes inteligentes redefinirán el cuidado de la salud con avances cada vez más visionarios. Estos dispositivos, que integrarán tintas biocompatibles en lugar de las convencionales, modificarán su color, emitirán señales fluorescentes y sincronizarán datos con aplicaciones móviles para transmitir mediciones en tiempo real. Se proyecta un futuro en el que estos tatuajes no solo vigilarán parámetros como la glucosa en sangre, sino que también intervendrán activamente para preservar vidas mediante una supervisión continua y no invasiva del estado de salud.',
+      keywords: ['tinta biocompatible', 'monitoreo en tiempo real', 'glucosa', 'aplicación móvil'],
+      date: 'May, 2025'
+    },
+    en: {
+      title: 'Tatuajes que salvarán vidas',
+      abstract:
+        'Los tatuajes inteligentes redefinirán el cuidado de la salud con avances cada vez más visionarios. Estos dispositivos, que integrarán tintas biocompatibles en lugar de las convencionales, modificarán su color, emitirán señales fluorescentes y sincronizarán datos con aplicaciones móviles para transmitir mediciones en tiempo real. Se proyecta un futuro en el que estos tatuajes no solo vigilarán parámetros como la glucosa en sangre, sino que también intervendrán activamente para preservar vidas mediante una supervisión continua y no invasiva del estado de salud.',
+      keywords: ['tinta biocompatible', 'monitoreo en tiempo real', 'glucosa', 'aplicación móvil'],
+      date: 'May, 2025'
+    }
+  },
+  {
+    id: 0,
+    imgSrc: 'images/articles/00-simple-route.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [
+      {
+        name: 'Jhon Mauricio Aguirre Cortés',
+        url: ''
+      },
+      {
+        name: 'Luis Carlos Caicedo Rosero',
+        url: ''
+      }
+    ],
+    journal: {
+      name: 'Journal of the Brazilian Chemistry Society',
+      url: 'https://jbcs.sbq.org.br/'
+    },
+    authors: ['Aguirre, J.M.', 'Gutiérrez, A.', 'Giraldo, O.'],
+    doi: '10.1590/S0103-50532011000300019',
+    impact: {
+      jm: 'https://www.journalmetrics.org/',
+      sjr: 'https://www.scimagojr.com/journalsearch.php?q=22729&tip=sid&clean=0',
+      jcr: 'https://jcr.clarivate.com/jcr-jp/journal-profile?journal=J%20BRAZIL%20CHEM%20SOC&year=2024&fromPage=%2Fjcr%2Fsearch-results'
+    },
+    es: {
+      title: 'Simple route for the synthesis of copper hydroxy salts',
+      abstract:
+        'The aim of this work is to present a simple and fast method for synthesizing copper hydroxynitrate, a layered material of growing interest. Two-dimensional solids like this have attracted increasing attention due to their potential applications, especially for their ability to intercalate ionic or neutral species between layers, where weak interactions allow structural flexibility. The proposed method operates under mild conditions, without requiring changes in temperature or pressure, and yields a highly crystalline product despite the absence of long aging times typically reported in other approaches. This study contributes to the synthesis and characterization of hybrid layered phases and materials, with relevance to electrochemical electrode preparation, physicochemical and structural analysis.',
+      keywords: ['hydroxy salts', 'anionic clay', 'copper hydroxynitrate', 'gerhardtite'],
+      date: 'Mar, 2011'
+    },
+    en: {
+      title: 'Simple route for the synthesis of copper hydroxy salts',
+      abstract:
+        'The aim of this work is to present a simple and fast method for synthesizing copper hydroxynitrate, a layered material of growing interest. Two-dimensional solids like this have attracted increasing attention due to their potential applications, especially for their ability to intercalate ionic or neutral species between layers, where weak interactions allow structural flexibility. The proposed method operates under mild conditions, without requiring changes in temperature or pressure, and yields a highly crystalline product despite the absence of long aging times typically reported in other approaches. This study contributes to the synthesis and characterization of hybrid layered phases and materials, with relevance to electrochemical electrode preparation, physicochemical and structural analysis.',
+      keywords: ['hydroxy salts', 'anionic clay', 'copper hydroxynitrate', 'gerhardtite'],
+      date: 'Mar, 2011'
+    }
+  },
+  {
+    id: 1,
+    imgSrc: 'images/articles/01-pipes.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [
+      {
+        name: 'Jhon Mauricio Aguirre Cortés',
+        url: ''
+      },
+      {
+        name: 'Luis Fernando Cortés Henao',
+        url: ''
+      }
+    ],
+    journal: {
+      name: 'Universidad Nacional de Colombia (UNAL)',
+      url: 'https://portaldelibros.unal.edu.co/librerias-unal/sede-manizales.html'
+    },
+    authors: ['Orrego, C.E.', 'Cardona, C.A.'],
+    doi: '',
+    // isbn: '9789587615340',
+    url: 'https://www.researchgate.net/profile/Carlos-Orrego-4/publication/288824396_Catalytic_systems_for_integral_transformations_of_oil_plants_through_biorefinery_concept/links/5684102908aebccc4e0fdad4/Catalytic-systems-for-integral-transformations-of-oil-plants-through-biorefinery-concept.pdf',
+    es: {
+      title:
+        'Catalytic Systems for Integral Transformations of Oil Plants Through Biorefinery Concept - Synthesis and characterization of layered double hidroxides exchanged with pipes for metal complex formation',
+      abstract:
+        'El presente capítulo tiene como objetivo describir los procedimientos de síntesis y caracterización fisicoquímica —mediante AA, XRD, FTIR, micro-Raman, SEM-EDS y TGA-DTG— de hidróxidos dobles laminares (HDL) obtenidos con una relación molar Mg/Al de 2:1, modificados por intercambio aniónico con la molécula orgánica Piperazina-1,4-bis(2-etanosulfonato) (PIPES), la cual actúa como ligando en la formación de complejos metálicos de cobre. En este proceso, los pares electrónicos de los átomos de nitrógeno en dos moléculas adyacentes de PIPES deben orientarse hacia el ión metálico, y la configuración tipo “silla” favorece esta interacción, facilitando la captura del ión por dichos pares electrónicos.',
+      keywords: ['PIPES', 'LDH', 'complejos metálicos', 'brucita'],
+      date: 'Ago, 2013'
+    },
+    en: {
+      title:
+        'Catalytic Systems for Integral Transformations of Oil Plants Through Biorefinery Concept - Synthesis and characterization of layered double hidroxides exchanged with pipes for metal complex formation',
+      abstract:
+        'El presente capítulo tiene como objetivo describir los procedimientos de síntesis y caracterización fisicoquímica —mediante AA, XRD, FTIR, micro-Raman, SEM-EDS y TGA-DTG— de hidróxidos dobles laminares (HDL) obtenidos con una relación molar Mg/Al de 2:1, modificados por intercambio aniónico con la molécula orgánica Piperazina-1,4-bis(2-etanosulfonato) (PIPES), la cual actúa como ligando en la formación de complejos metálicos de cobre. En este proceso, los pares electrónicos de los átomos de nitrógeno en dos moléculas adyacentes de PIPES deben orientarse hacia el ión metálico, y la configuración tipo “silla” favorece esta interacción, facilitando la captura del ión por dichos pares electrónicos.',
+      keywords: ['PIPES', 'LDH', 'complejos metálicos', 'brucita'],
+      date: 'Aug, 2013'
+    }
+  },
+  {
+    id: 2,
+    imgSrc: 'images/articles/02-prop-dielec.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [
+      {
+        name: 'Jhon Mauricio Aguirre Cortés',
+        url: ''
+      }
+    ],
+    journal: {
+      name: 'Revista de la Sociedad Química del Perú',
+      url: 'https://revistas.sqperu.org.pe/index.php/revistasqperu'
+    },
+    authors: ['Giraldo, O.H.', 'Arias, N.P.', 'Aguirre, J.M.'],
+    doi: '10.37761/rsqp.v81i3.21',
+    es: {
+      title: 'Propiedades dieléctricas de hidróxidos dobles laminares de Mg:Al',
+      abstract:
+        'This study focuses on charge transport in Mg-Al layered double hydroxides (LDH) with nitrate ions as guest species. These nanomaterials can adjust their properties depending on the molecules placed between their layers, allowing the incorporation of various compounds like nanoparticles, polymers, DNA, and enzymes. Due to this flexibility, LDHs are useful in applications such as catalysis, sensors, drug delivery, UV protection, fuel cells, and energy storage devices.',
+      keywords: ['hidróxidos dobles laminares', 'propiedades dieléctricas', 'conductividad iónica'],
+      date: 'Jun, 2015'
+    },
+    en: {
+      title: 'Propiedades dieléctricas de hidróxidos dobles laminares de Mg:Al',
+      abstract:
+        'This study focuses on charge transport in Mg-Al layered double hydroxides (LDH) with nitrate ions as guest species. These nanomaterials can adjust their properties depending on the molecules placed between their layers, allowing the incorporation of various compounds like nanoparticles, polymers, DNA, and enzymes. Due to this flexibility, LDHs are useful in applications such as catalysis, sensors, drug delivery, UV protection, fuel cells, and energy storage devices.',
+      keywords: ['hidróxidos dobles laminares', 'propiedades dieléctricas', 'conductividad iónica'],
+      date: 'Jun, 2015'
+    }
+  },
+  {
+    id: 3,
+    imgSrc: 'images/articles/03-nano-pal.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [],
+    journal: {
+      name: 'Revista Colombiana de Química',
+      url: 'https://revistas.unal.edu.co//index.php/rcolquim'
+    },
+    authors: ['Giraldo, C.C.', 'Ocampo, R.', 'Ríos, L.A.', 'Martínez, M.M.', 'Aguirre, J.M.'],
+    doi: '10.15446/rev.colomb.quim.v46n2.63028',
+    impact: {
+      jm: 'https://www.journalmetrics.org/',
+      sjr: 'https://www.scimagojr.com/journalsearch.php?q=14200154740&tip=sid&clean=0',
+      jcr: 'https://jcr.clarivate.com/jcr-jp/journal-profile?journal=REV%20COLOMB%20QUIM&year=2024&fromPage=%2Fjcr%2Fsearch-results'
+    },
+    es: {
+      title:
+        'Nanopartículas de paladio soportadas en hidroxisales laminares: uso potencial en reacciones de Sonogashira',
+      abstract:
+        'En este artículo se reporta la síntesis de nanopartículas de paladio soportadas en hidroxisales de acetato de zinc y modificadas con un surfactante (LHS-Zn-Ac/Pd0 y LHS-Zn-Suf/Pd0 respectivamente), mediante inserción de [PdCl4]2- y su posterior reducción con etanol en reflujo. Con la inserción de surfactante, la distancia interlaminar de la hidroxisal de partida (LHS-Zn-Ac) se incrementó de 13,8 Å a 29,8 Å, mientras que los materiales finales, que contenían paladio metálico registraron distancias interlaminares de 22,4 Å y 29,4 Å para LHS-Zn-Ac/Pd0 y LHS-Zn-Suf/Pd0 respectivamente. Las hidroxisales de acetato de zinc y de surfactante con nanopartículas metálicas de paladio incorporadas fueron ensayadas como potenciales catalizadores en la reacción de Sonogashira partiendo de fenilacetileno y yoduros de arilo, particularmente yodobenceno o 2-yodofenol, dando lugar a difenilacetileno (32% de rendimiento de producto aislado y purificado) o 2-fenilbenzofurano (18%). Todos los materiales inorgánicos fueron caracterizados mediante las siguientes técnicas: difracción de rayos X (XRD), microscopia electrónica de barrido (SEM y SEM-EDS), microscopia electrónica de transmisión (TEM) y espectroscopía de Infrarrojo con Transformada de Fourier (FT-IR). Por su parte los compuestos orgánicos se caracterizaron por resonancia magnética nuclear (1H-NMR y 13C-NMR) y cromatografía de gases acoplada a espectrometría de masas (GC-MS).',
+      keywords: [
+        'hidroxisales',
+        'lauril sulfato de sodio',
+        'paladio',
+        'acoplamiento C-C tipo Sonogashira',
+        'difenilacetileno',
+        '2-fenilbenzofurano'
+      ],
+      date: 'Feb, 2017'
+    },
+    en: {
+      title: 'Palladium nanoparticles supported in laminar hydroxide salts: potential use in Sonogashira reactions',
+      abstract:
+        'This article reports the synthesis of palladium nanoparticles supported on zinc acetate hydroxysalts and modified with a surfactant (LHS-Zn-Ac/Pd0 and LHS-Zn-Suf/Pd0 respectively), by insertion of tetrachloropaladate and its subsequent reduction with ethanol at reflux. With the surfactant insertion, the interlaminar distance of the starting hydroxysalt (LHS-Zn-Ac) increased from 13.8 Å to 29.8 Å, while the final materials containing palladium metal registered interlaminar distances of 22.4 Å and 29.4 Å for LHS-Zn-Ac/Pd0 and LHS-Zn-Suf/Pd0 respectively. Zinc acetate hydroxysalt and surfactant with incorporated palladium metal nanoparticles were tested as potential catalysts in the Sonogashira reaction starting from phenylacetylene and aryl iodides, particularly iodobenzene or 2-iodophenol, giving diphenylacetylene (32% yield of isolated and purified product) or 2-phenylbenzofuran (18%). All inorganic materials were characterized by the following techniques: (1) X-ray diffraction (XRD), (2) scanning electron microscopy (SEM and SEM-EDS), (3) transmission electron microscopy (TEM) and (4) Fourier transformed infrared spectroscopy (FT-IR). The organic compounds were characterized by nuclear magnetic resonance (1H-NMR and 13C-NMR) and gas chromatography coupled to mass spectrometry (GC-MS).',
+      keywords: [
+        'hydroxide salts',
+        'sodium lauryl sulfate',
+        'palladium nanoparticles',
+        'Sonogashira C-C coupling reactions',
+        'diphenylacetylene',
+        '2-phenylbenzofuran'
+      ],
+      date: 'Feb, 2017'
+    }
+  },
+  {
+    id: 4,
+    imgSrc: 'images/articles/04-nano-hidro.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [],
+    journal: {
+      name: 'DYNA (Colombia)',
+      url: 'https://revistas.unal.edu.co/index.php/dyna'
+    },
+    authors: ['Martínez, M.M.', 'Ocampo, R.', 'Aguirre, J.M.', 'Giraldo, O.', 'Ríos, L.A.'],
+    doi: '10.15446/dyna.v85n206.68132',
+    impact: {
+      sjr: 'https://www.scimagojr.com/journalsearch.php?q=12600154771&tip=sid&clean=0',
+      jcr: 'https://jcr.clarivate.com/jcr-jp/journal-profile?journal=DYNA-COLOMBIA&year=2013&fromPage=%2Fjcr%2Fsearch-results'
+    },
+    es: {
+      title:
+        'Nanopartículas de paladio a partir de una hidroxisal modificada con surfactante intercambiada con tetracloropaladato',
+      abstract:
+        'Se obtuvieron nanopartículas de paladio soportadas en el espacio interlaminar de hidroxisales obtenidas a partir de hidroxicloruro de zinc, mediante la intercalación previa del surfactante aniónico dodecil sulfato de sodio (DS), seguida por intercambio con tetracloropaladato de potasio y la reducción final a paladio metálico mediante etanol. Los materiales finales e intermediarios fueron caracterizados mediante varias técnicas instrumentales tales como PXRD, adsorción de N2, SEM y TEM. Los análisis comparativos revelaron cambios claramente observables en la estructura, área superficial específica y morfología del material reducido con respecto a los precursores de partida. Los análisis demostraron que, tras la modificación del material de partida con el surfactante, en el material resultante se incrementó el espacio interlaminar y el área BET, los cuales se conservaron considerablemente hasta la obtención de la hidroxisal que contenía nanopartículas de paladio reducido.',
+      keywords: [
+        'hidroxicloruro de zinc modificado con surfactante',
+        'nanopartículas de paladio',
+        'tetracloropaladato',
+        'arcillas aniónicas'
+      ],
+      date: 'Jul, 2018'
+    },
+    en: {
+      title: 'Palladium nanoparticles from a surfactant-modified hydroxysalt exchanged with tetrachloropalladate',
+      abstract:
+        'Palladium nanoparticles supported in the interlayer space of hydroxysalts were obtained from zinc hydroxychloride via a prior intercalation of the anionic surfactant sodium dodecyl sulfate (DS), followed by an exchange with potassium tetrachloropalladate and its final reduction to metallic palladium by ethanol. The final materials and their intermediates were characterized by several instrumental techniques such as PXRD, N2 adsorption, SEM, and TEM. The comparative analyses revealed clearly visible changes on structure, specific surface area and morphology of the reduced material with respect to the starting precursors. The analyses demonstrated that, upon modification of the starting material with the surfactant, the resulting material had a significantly enhanced interlayer space and BET area, which were fairly maintained until the reduced palladium-containing hydroxysalt was obtained.',
+      keywords: [
+        'surfactant-modified zinc hydroxychloride',
+        'palladium nanoparticles',
+        'tetrachloropalladate',
+        'anionic clays'
+      ],
+      date: 'Jul, 2018'
+    }
+  },
+  {
+    id: 5,
+    imgSrc: 'images/articles/05-print-photo.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [],
+    journal: {
+      name: 'Applied Materials Today',
+      url: 'https://www.sciencedirect.com/journal/applied-materials-today'
+    },
+    authors: ['Aguirre, J.M.', 'Moral, A.I.', 'Moral, A.', 'Bailón, E.', 'Davó, A.', 'Pérez, A.F.', 'Carrasco, F.'],
+    doi: '10.1016/j.apmt.2023.101831',
+    impact: {
+      jm: 'https://www.journalmetrics.org/',
+      sjr: 'https://www.scimagojr.com/journalsearch.php?q=21100420316&tip=sid&clean=0#google_vignette',
+      jcr: 'https://jcr.clarivate.com/jcr-jp/journal-profile?journal=APPL%20MATER%20TODAY&year=2024&fromPage=%2Fjcr%2Fsearch-results'
+    },
+    es: {
+      title: '3D printing in photocatalysis: Methods and capabilities for the improved performance',
+      abstract:
+        'This research explores how certain materials can be activated by light to help remove pollutants from water, through a process called photocatalysis. While traditional materials have been widely studied, using 3D printing to improve their performance is a new and promising approach. Progress is slower due to added challenges, but this work offers a simple explanation of how photocatalysis works, what has been achieved so far with 3D printing, and what future possibilities exist by combining both technologies.',
+      keywords: ['3D printing', 'additive manufacture', 'reactor design', 'photocatalysis'],
+      date: 'Abr, 2023'
+    },
+    en: {
+      title: '3D printing in photocatalysis: Methods and capabilities for the improved performance',
+      abstract:
+        'This research explores how certain materials can be activated by light to help remove pollutants from water, through a process called photocatalysis. While traditional materials have been widely studied, using 3D printing to improve their performance is a new and promising approach. Progress is slower due to added challenges, but this work offers a simple explanation of how photocatalysis works, what has been achieved so far with 3D printing, and what future possibilities exist by combining both technologies.',
+      keywords: ['3D printing', 'additive manufacture', 'reactor design', 'photocatalysis'],
+      date: 'Apr, 2023'
+    }
+  },
+  {
+    id: 6,
+    imgSrc: 'images/articles/06-based-photo.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [
+      {
+        name: 'Laura Alzate Aguirre',
+        url: 'https://www.linkedin.com/in/laura-alzate-aguirre/'
+      }
+    ],
+    journal: {
+      name: 'Catalysts',
+      url: 'https://www.mdpi.com/journal/catalysts'
+    },
+    authors: ['Aguirre, J.M.', 'Moral, A.I.', 'Bailón, E.', 'Carrasco, F.', 'Pérez, A.F.'],
+    doi: '10.3390/catal14080474',
+    impact: {
+      jm: 'https://www.journalmetrics.org/',
+      sjr: 'https://www.scimagojr.com/journalsearch.php?q=21100332402&tip=sid&clean=0',
+      jcr: 'https://jcr.clarivate.com/jcr-jp/journal-profile?journal=CATALYSTS&year=2024&fromPage=%2Fjcr%2Fsearch-results'
+    },
+    es: {
+      title:
+        'BiVO4-Based Photocatalysts for the Degradation of Antibiotics in Wastewater: Calcination Role after Solvothermal Synthesis',
+      abstract:
+        'This research explores how a new material can help remove an emerging contaminant from water using blue LED light. Before starting the light treatment, the material was mixed with the contaminated water and left to rest in the dark to allow a balance between the contaminant and the surface of the material. The light treatment lasted several hours, and small samples were taken regularly to check how much of the contaminant was removed. These samples were filtered and analyzed using light absorption techniques. Finally, the safety of the treated water was tested using bacteria that glow in the dark, helping to understand if the process makes the water less toxic.',
+      keywords: ['BiVO4', 'solar light', 'SMX', 'photocatalysts'],
+      date: 'Jul, 2024'
+    },
+    en: {
+      title:
+        'BiVO4-Based Photocatalysts for the Degradation of Antibiotics in Wastewater: Calcination Role after Solvothermal Synthesis',
+      abstract:
+        'This research explores how a new material can help remove an emerging contaminant from water using blue LED light. Before starting the light treatment, the material was mixed with the contaminated water and left to rest in the dark to allow a balance between the contaminant and the surface of the material. The light treatment lasted several hours, and small samples were taken regularly to check how much of the contaminant was removed. These samples were filtered and analyzed using light absorption techniques. Finally, the safety of the treated water was tested using bacteria that glow in the dark, helping to understand if the process makes the water less toxic.',
+      keywords: ['BiVO4', 'solar light', 'SMX', 'photocatalysts'],
+      date: 'Jul, 2024'
+    }
+  },
+  {
+    id: 7,
+    imgSrc: 'images/articles/07-size-mini.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [
+      {
+        name: 'Laura Alzate Aguirre',
+        url: 'https://www.linkedin.com/in/laura-alzate-aguirre/'
+      }
+    ],
+    journal: {
+      name: 'Applied Surface Science',
+      url: 'https://www.sciencedirect.com/journal/applied-surface-science'
+    },
+    authors: ['Aguirre, J.M.', 'Munguía, A.', 'Moral, A.', 'Pérez, A.F.', 'Carrasco, F.', 'Bailón, E.'],
+    doi: '10.1016/j.apsusc.2024.160609',
+    impact: {
+      jm: 'https://www.journalmetrics.org/',
+      sjr: 'https://www.scimagojr.com/journalsearch.php?q=28983&tip=sid&clean=0',
+      jcr: 'https://jcr.clarivate.com/jcr-jp/journal-profile?journal=APPL%20SURF%20SCI&year=2024&fromPage=%2Fjcr%2Fhome'
+    },
+    es: {
+      title:
+        'Size-miniaturization of TiO2-ZrO2 coupled semiconductors to develop highly efficient visible-driven photocatalysts for the degradation of drugs in wastewater',
+      abstract:
+        'In this study, the synthesized catalysts WERE evaluated for its photocatalytic activity in the degradation of sulfamethoxazole (SMX) under blue-LED irradiation (λ = 465 nm). Remarkably, high degradation efficiency was achieved using visible light, comparable to values reported in the literature despite employing a less powerful light source. Additionally, the toxicity of the treated water was assessed through the standardized luminescent inhibition biotest using Vibrio fischeri, providing insight into the environmental safety of the photocatalytic process.',
+      keywords: ['photocatalysis', 'nanoparticles', 'TiO2', 'ZrO2', 'visible light', 'advanced oxidation processes'],
+      date: 'Oct, 2024'
+    },
+    en: {
+      title:
+        'Size-miniaturization of TiO2-ZrO2 coupled semiconductors to develop highly efficient visible-driven photocatalysts for the degradation of drugs in wastewater',
+      abstract:
+        'In this study, the synthesized catalysts WERE evaluated for its photocatalytic activity in the degradation of sulfamethoxazole (SMX) under blue-LED irradiation (λ = 465 nm). Remarkably, high degradation efficiency was achieved using visible light, comparable to values reported in the literature despite employing a less powerful light source. Additionally, the toxicity of the treated water was assessed through the standardized luminescent inhibition biotest using Vibrio fischeri, providing insight into the environmental safety of the photocatalytic process.',
+      keywords: ['photocatalysis', 'nanoparticles', 'TiO2', 'ZrO2', 'visible light', 'advanced oxidation processes'],
+      date: 'Oct, 2024'
+    }
+  },
+  {
+    id: 8,
+    imgSrc: 'images/articles/08-elect-perf.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [
+      {
+        name: 'Nayda Patricia Arias Duque',
+        url: ''
+      }
+    ],
+    journal: {
+      name: 'Materials Today Chemistry',
+      url: 'https://www.sciencedirect.com/journal/materials-today-chemistry'
+    },
+    authors: ['Arias, N.P.', 'Torres, D.A.', 'Giraldo, O.H.', 'Amaya, S.', 'Aguirre, J.M.'],
+    doi: '10.1016/j.mtchem.2024.102498',
+    impact: {
+      jm: 'https://www.journalmetrics.org/',
+      sjr: 'https://www.scimagojr.com/journalsearch.php?q=21100810714&tip=sid&clean=0',
+      jcr: 'https://jcr.clarivate.com/jcr-jp/journal-profile?journal=MATER%20TODAY%20CHEM&year=2024&fromPage=%2Fjcr%2Fhome'
+    },
+    es: {
+      title: 'Electrical performance of non-stoichiometry manganese oxides',
+      abstract:
+        'This work aims to explore the synthesis and electrical/structural characterization of hausmanite and bixbyite-type manganese oxides obtained via thermal oxidation. SEM was used for morphological analysis, while XPS characterized the chemical environments of Mn and O. Crystalline phases were identified using XRD and Rietveld refinement. Impedance spectroscopy provided insights into conductivity, supported by Nyquist plots, equivalent circuits, permittivity, and dielectric modulus to understand charge transport. Conductivity findings were validated through density functional theory (DFT) calculations, contributing to the understanding of conduction mechanisms relevant to catalytic potential.',
+      keywords: ['refinement Rietveld', 'Nyquist plots', 'DFT calculation', 'espectroscopia de impedancia'],
+      date: 'Ene, 2025'
+    },
+    en: {
+      title: 'Electrical performance of non-stoichiometry manganese oxides',
+      abstract:
+        'This work aims to explore the synthesis and electrical/structural characterization of hausmanite and bixbyite-type manganese oxides obtained via thermal oxidation. SEM was used for morphological analysis, while XPS characterized the chemical environments of Mn and O. Crystalline phases were identified using XRD and Rietveld refinement. Impedance spectroscopy provided insights into conductivity, supported by Nyquist plots, equivalent circuits, permittivity, and dielectric modulus to understand charge transport. Conductivity findings were validated through density functional theory (DFT) calculations, contributing to the understanding of conduction mechanisms relevant to catalytic potential.',
+      keywords: ['refinement Rietveld', 'Nyquist plots', 'DFT calculation', 'espectroscopia de impedancia'],
+      date: 'Jan, 2025'
+    }
+  }
+];
+
+export default articles.reverse();

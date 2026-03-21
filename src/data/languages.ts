@@ -1,0 +1,40 @@
+const languages = {
+  es: {
+    languages: [
+      {
+        id: 0,
+        language: 'Español',
+        isNative: true
+      },
+      {
+        id: 1,
+        language: 'Inglés',
+        isNative: false,
+        listening: 'B1',
+        reading: 'B1',
+        speaking: 'B1',
+        writing: 'B1'
+      }
+    ]
+  },
+  en: {
+    languages: [
+      {
+        id: 0,
+        language: 'Español',
+        isNative: true
+      },
+      {
+        id: 1,
+        language: 'Inglés',
+        isNative: false,
+        listening: 'B1',
+        reading: 'B1',
+        speaking: 'B1',
+        writing: 'B1'
+      }
+    ]
+  }
+};
+
+export default languages;

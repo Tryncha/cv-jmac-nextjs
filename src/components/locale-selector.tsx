@@ -24,7 +24,7 @@ const LocaleButton = ({ localeOption }: { localeOption: Locale }) => {
         src={`/icons/locales/${localeOption}.png`}
         alt={`${capitalizeWord(locale)} Language Flag`}
         width={16}
-        height={16}
+        height={20}
       />
       <span className="font-semibold uppercase">{localeOption}</span>
     </button>

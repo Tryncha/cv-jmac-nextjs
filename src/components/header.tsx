@@ -8,7 +8,7 @@ const Header = async () => {
   const t = await getTranslations();
 
   return (
-    <header className="z-30 flex w-full flex-col items-center justify-between border-b border-slate-300 bg-slate-200 shadow-md xl:flex-row xl:px-4">
+    <header className="absolute inset-x-0 top-0 z-10 flex w-full flex-col items-center justify-between border-b border-slate-300 bg-slate-200 shadow-md xl:flex-row xl:px-4">
       <section className="flex justify-center gap-2 px-12 py-1 md:py-0 xl:p-0">
         {/* Logo */}
         <Link

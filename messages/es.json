@@ -12,5 +12,15 @@
   "Footer": {
     "design": "Diseño y código",
     "info": "Contenido y material audiovisual"
+  },
+  "Resume": {
+    "title": "Sobre mí"
+  },
+  "Studies": {
+    "educationTitle": "Educación",
+    "graduatesTitle": "Diplomados",
+    "otherStudiesTitle": "Cursos y Conferencias científicas",
+    "area": "Área",
+    "thesis": "Tésis"
   }
 }
