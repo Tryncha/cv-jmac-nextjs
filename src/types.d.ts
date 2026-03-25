@@ -85,3 +85,33 @@ export interface Participation {
   es: LocaleParticipation;
   en: LocaleParticipation;
 }
+
+export interface LocaleProject {
+  title: string;
+  institution: string;
+  city: string;
+  description: string[];
+}
+
+export interface Project {
+  id: number;
+  es: LocaleProject;
+  en: LocaleProject;
+}
+
+export interface LocaleInvestigation {
+  groupName: string;
+  institution: string;
+  department: string;
+  director: string;
+  area: string;
+  location: string;
+  lines: string[];
+}
+
+export interface Investigation {
+  id: number;
+  url: string;
+  es: LocaleInvestigation;
+  en: LocaleInvestigation;
+}

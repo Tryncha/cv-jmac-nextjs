@@ -40,5 +40,12 @@
   },
   "Participation": {
     "title": "Participations in Doctoral and Master's Theses"
+  },
+  "ScienceProjects": {
+    "title": "Participation in scientific projects"
+  },
+  "Investigation": {
+    "title": "Research Groups",
+    "lines": "Research Lines"
   }
 }

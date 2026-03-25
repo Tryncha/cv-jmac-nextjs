@@ -1,6 +1,6 @@
-import type { ProjectData } from '../types';
+import { Project } from '../types';
 
-const projects: ProjectData[] = [
+export const PROJECTS: Project[] = [
   {
     id: 0,
     es: {
@@ -195,6 +195,4 @@ const projects: ProjectData[] = [
       ]
     }
   }
-];
-
-export default projects.reverse();
+].reverse();

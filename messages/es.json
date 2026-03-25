@@ -40,5 +40,12 @@
   },
   "Participation": {
     "title": "Participaciones en Tesis de Doctorado y Maestría"
+  },
+  "ScienceProjects": {
+    "title": "Participación en proyectos científicos"
+  },
+  "Investigation": {
+    "title": "Grupos de Investigación",
+    "lines": "Líneas de Investigación"
   }
 }

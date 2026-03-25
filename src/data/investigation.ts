@@ -1,6 +1,6 @@
-import type { InvestigationData } from '../types';
+import { Investigation } from '../types';
 
-const investigation: InvestigationData[] = [
+export const INVESTIGATION: Investigation[] = [
   {
     id: 0,
     url: 'http://investigacion.manizales.unal.edu.co/grupos/COL0014912',
@@ -117,6 +117,4 @@ const investigation: InvestigationData[] = [
       ]
     }
   }
-];
-
-export default investigation.reverse();
+].reverse();
