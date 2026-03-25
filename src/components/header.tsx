@@ -1,11 +1,11 @@
-import { getTranslations } from 'next-intl/server';
 import { Link } from '../i18n/navigation';
 import { BlockLogo } from './icons/personal-icons';
 import { ibmPlexSerif } from '../lib/fonts';
 import LinksNavbar from './links-navbar';
+import { getIntlConfig } from '../lib/utils';
 
 const Header = async () => {
-  const t = await getTranslations();
+  const { t } = await getIntlConfig();
 
   return (
     <header className="absolute inset-x-0 top-0 z-10 flex w-full flex-col items-center justify-between border-b border-slate-300 bg-slate-200 shadow-md xl:flex-row xl:px-4">

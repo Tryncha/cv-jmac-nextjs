@@ -1,6 +1,6 @@
-import { Direction } from '../types';
+import type { Direction } from '../types';
 
-export const DIRECTION: Direction[] = [
+const direction: Direction[] = [
   {
     id: 0,
     es: {
@@ -158,4 +158,6 @@ export const DIRECTION: Direction[] = [
       city: 'Granada, Spain'
     }
   }
-].reverse();
+];
+
+export default direction.reverse();

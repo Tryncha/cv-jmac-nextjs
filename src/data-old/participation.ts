@@ -1,6 +1,6 @@
-import { Participation } from '../types';
+import type { Participation } from '../types';
 
-export const PARTICIPATION: Participation[] = [
+const participation: Participation[] = [
   {
     id: 0,
     es: {
@@ -86,4 +86,6 @@ export const PARTICIPATION: Participation[] = [
       city: 'Manizales, Colombia'
     }
   }
-].reverse();
+];
+
+export default participation.reverse();

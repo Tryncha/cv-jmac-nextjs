@@ -1,10 +1,10 @@
-import { getTranslations } from 'next-intl/server';
 import { MapPin } from 'lucide-react';
 import { Link } from '../i18n/navigation';
 import LocaleSelector from './locale-selector';
+import { getIntlConfig } from '../lib/utils';
 
 const Footer = async () => {
-  const t = await getTranslations();
+  const { t } = await getIntlConfig();
 
   return (
     <footer className="z-30 hidden justify-between border-t border-slate-300 bg-slate-200 px-2 py-1 shadow-sm md:flex">

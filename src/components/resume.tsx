@@ -1,9 +1,8 @@
-import { getLocale, getTranslations } from 'next-intl/server';
-import RESUME from '../data/resume';
+import { RESUME } from '../data-old/resume';
+import { getIntlConfig } from '../lib/utils';
 
 const Resume = async () => {
-  const t = await getTranslations();
-  const locale = await getLocale();
+  const { t, locale } = await getIntlConfig();
 
   return (
     <section>

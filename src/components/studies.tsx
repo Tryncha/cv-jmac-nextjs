@@ -1,18 +1,18 @@
-import { getLocale, getTranslations } from 'next-intl/server';
 import { LocaleOtherStudy, LocaleStudy } from '../types';
-import { GRADUATES, MAIN_STUDIES, OTHER_STUDIES } from '../data/studies';
+import { GRADUATES, MAIN_STUDIES, OTHER_STUDIES } from '../data-old/studies';
 import Details from './details';
 import AwardText from './award-text';
+import { getIntlConfig } from '../lib/utils';
 
 const MainStudy = async ({ study }: { study: LocaleStudy }) => {
-  const t = await getTranslations();
+  const { t } = await getIntlConfig();
   const { title, institution, area, thesis, city, award } = study;
 
   return (
     <>
       <div className="flex flex-col justify-between gap-2 p-4 text-center hover:rounded-sm hover:bg-slate-50 sm:text-left md:py-2">
         {/* Main info and Award info */}
-        <div className="flex flex-col items-center justify-between sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-2 sm:flex-row">
           <div className="flex flex-col">
             <h3 className="text-lg/6 font-semibold">{title}</h3>
             <span>{institution}</span>
@@ -72,8 +72,7 @@ const OtherStudy = ({ study }: { study: LocaleOtherStudy }) => {
 };
 
 const Studies = async () => {
-  const t = await getTranslations();
-  const locale = await getLocale();
+  const { t, locale } = await getIntlConfig();
 
   return (
     <>

@@ -22,5 +22,23 @@
     "otherStudiesTitle": "Cursos y Conferencias científicas",
     "area": "Área",
     "thesis": "Tésis"
+  },
+  "WorkExperience": {
+    "title": "Experiencia Laboral",
+    "teachingText": "Docencia en"
+  },
+  "Direction": {
+    "title": "Dirección de trabajos de fin de grado/universitarios",
+    "student": "Estudiante"
+  },
+  "App": {
+    "participation": "Participación",
+    "student": "Estudiante",
+    "director": {
+      "singular": "Director"
+    }
+  },
+  "Participation": {
+    "title": "Participaciones en Tesis de Doctorado y Maestría"
   }
 }
