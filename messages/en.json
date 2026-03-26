@@ -47,5 +47,12 @@
   "Investigation": {
     "title": "Research Groups",
     "lines": "Research Lines"
+  },
+  "Publications": {
+    "tabs": {
+      "articles": "Articles",
+      "presentations": "Presentations",
+      "media": "Media"
+    }
   }
 }
