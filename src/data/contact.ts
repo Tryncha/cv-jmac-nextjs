@@ -15,7 +15,7 @@ interface Email extends ContactData {
   type: 'email';
 }
 
-const contact: Array<SocialMedia | Email> = [
+export const CONTACT: Array<SocialMedia | Email> = [
   {
     id: 'twitter/x',
     name: 'Twitter/X',
@@ -68,7 +68,7 @@ const contact: Array<SocialMedia | Email> = [
     id: 'unal',
     name: 'Universidad Nacional de Colombia (UNAL)',
     institutionUrl: 'https://unal.edu.co/',
-    institutionLogo: 'logos/unal-sm.png',
+    institutionLogo: '/logos/unal-sm.png',
     emailAddress: 'jmaguirrec@unal.edu.co',
     type: 'email'
   },
@@ -76,7 +76,7 @@ const contact: Array<SocialMedia | Email> = [
     id: 'ucaldas',
     name: 'Universidad de Caldas (UCaldas)',
     institutionUrl: 'https://www.ucaldas.edu.co/',
-    institutionLogo: 'logos/ucaldas-sm.png',
+    institutionLogo: '/logos/ucaldas-sm.png',
     emailAddress: 'jhon.aguirre@ucaldas.edu.co',
     type: 'email'
   },
@@ -84,7 +84,7 @@ const contact: Array<SocialMedia | Email> = [
     id: 'ugr',
     name: 'Universidad de Granada (UGR)',
     institutionUrl: 'https://www.ugr.es/',
-    institutionLogo: 'logos/ugr-sm.png',
+    institutionLogo: '/logos/ugr-sm.png',
     emailAddress: 'jmacor7@correo.ugr.es',
     type: 'email'
   },
@@ -92,7 +92,7 @@ const contact: Array<SocialMedia | Email> = [
     id: 'uclm',
     name: 'Universidad de Castilla-La Mancha (UCLM)',
     institutionUrl: 'https://www.uclm.es/',
-    institutionLogo: 'logos/uclm-sm.png',
+    institutionLogo: '/logos/uclm-sm.png',
     emailAddress: 'JhonMauricio.Aguirre@uclm.es',
     type: 'email'
   },
@@ -100,7 +100,7 @@ const contact: Array<SocialMedia | Email> = [
     id: 'ucm',
     name: 'Universidad Católica de Manizales (UCM)',
     institutionUrl: 'https://www.ucm.edu.co/',
-    institutionLogo: 'logos/ucm-sm.png',
+    institutionLogo: '/logos/ucm-sm.png',
     emailAddress: 'jaguirre@ucm.edu.co',
     type: 'email'
   },
@@ -108,10 +108,8 @@ const contact: Array<SocialMedia | Email> = [
     id: 'udea',
     name: 'Universidad de Antioquia (UdeA)',
     institutionUrl: 'https://www.udea.edu.co/',
-    institutionLogo: 'logos/udea-sm.png',
+    institutionLogo: '/logos/udea-sm.png',
     emailAddress: 'jhon.aguirre@udea.edu.co',
     type: 'email'
   }
 ];
-
-export default contact;

@@ -36,6 +36,14 @@
     "student": "Estudiante",
     "director": {
       "singular": "Director"
+    },
+    "institutionName": {
+      "unal": "Universidad Nacional de Colombia (UNAL)",
+      "ucaldas": "Universidad de Caldas (UCaldas)",
+      "ugr": "Universidad de Granada (UGR)",
+      "uclm": "Universidad de Castilla-La Mancha (UCLM)",
+      "ucm": "Universidad Católica de Manizales (UCM)",
+      "udea": "Universidad de Antioquia (UdeA)"
     }
   },
   "Participation": {
@@ -64,5 +72,11 @@
     "availableOn": "Disponible en",
     "copyright": "Todos los derechos reservados.",
     "videosTitle": "Videos"
+  },
+  "Contact": {
+    "emailSubject": "Consulta",
+    "copyEmail": "¡Dirección copiada!",
+    "sendMail": "Enviar un correo",
+    "links": "Conexiones académicas"
   }
 }
