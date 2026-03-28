@@ -1,9 +1,9 @@
-import type { PresentationData } from '../types';
+import { Presentation } from '../types';
 
-const presentations: PresentationData[] = [
+export const PRESENTATIONS: Presentation[] = [
   {
     id: 0,
-    imgSrc: 'images/presentations/00-metal-oxide.jpg',
+    imgSrc: '/images/presentations/00-metal-oxide.jpg',
     imgAlt: 'Presentation image',
     imgAuthor: [
       {
@@ -32,7 +32,7 @@ const presentations: PresentationData[] = [
   },
   {
     id: 1,
-    imgSrc: 'images/presentations/01-nano.jpg',
+    imgSrc: '/images/presentations/01-nano.jpg',
     imgAlt: 'Presentation image',
     imgAuthor: [
       {
@@ -61,7 +61,7 @@ const presentations: PresentationData[] = [
   },
   {
     id: 2,
-    imgSrc: 'images/presentations/02-foto-znti.jpg',
+    imgSrc: '/images/presentations/02-foto-znti.jpg',
     imgAlt: 'Presentation image',
     imgAuthor: [
       {
@@ -90,7 +90,7 @@ const presentations: PresentationData[] = [
   },
   {
     id: 3,
-    imgSrc: 'images/presentations/03-foto.bivo4.jpg',
+    imgSrc: '/images/presentations/03-foto.bivo4.jpg',
     imgAlt: 'Presentation image',
     imgAuthor: [
       {
@@ -119,7 +119,7 @@ const presentations: PresentationData[] = [
   },
   {
     id: 4,
-    imgSrc: 'images/presentations/04-nano-oxide.png',
+    imgSrc: '/images/presentations/04-nano-oxide.png',
     imgAlt: 'Presentation image',
     imgAuthor: [
       {
@@ -146,7 +146,7 @@ const presentations: PresentationData[] = [
   },
   {
     id: 5,
-    imgSrc: 'images/presentations/05-room.jpg',
+    imgSrc: '/images/presentations/05-room.jpg',
     imgAlt: 'Presentation image',
     imgAuthor: [],
     es: {
@@ -168,7 +168,7 @@ const presentations: PresentationData[] = [
   },
   {
     id: 6,
-    imgSrc: 'images/presentations/06-amoniaco.jpg',
+    imgSrc: '/images/presentations/06-amoniaco.jpg',
     imgAlt: 'Presentation image',
     imgAuthor: [
       {
@@ -193,6 +193,4 @@ const presentations: PresentationData[] = [
       date: 'Jul, 2025'
     }
   }
-];
-
-export default presentations.reverse();
+].reverse();

@@ -5,9 +5,10 @@ import { notFound } from 'next/navigation';
 import { workSans } from '@/src/lib/fonts';
 import Header from '@/src/components/header';
 import Footer from '@/src/components/footer';
-import '../globals.css';
 import ScrollToTopButton from '@/src/components/scroll-to-top-button';
 import LinksNavbar from '@/src/components/links-navbar';
+import Providers from '@/src/components/providers';
+import '../globals.css';
 
 export const metadata: Metadata = {
   title: 'CV - Jhon Mauricio Aguirre Cortés'
@@ -23,15 +24,17 @@ const RootLayout = async ({ children, params }: { children: React.ReactNode; par
     <html lang={locale}>
       <body className={`${workSans.className} bg-slate-300 text-sm text-slate-800`}>
         <NextIntlClientProvider>
-          <Header />
-          {children}
+          <Providers>
+            <Header />
+            {children}
 
-          {/* Visible on Mobile */}
-          <LinksNavbar version="bottom" />
+            {/* Visible on Mobile */}
+            <LinksNavbar version="bottom" />
 
-          {/* Visible on Desktop */}
-          <Footer />
-          <ScrollToTopButton />
+            {/* Visible on Desktop */}
+            <Footer />
+            <ScrollToTopButton />
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>

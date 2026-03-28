@@ -1,9 +1,9 @@
-import type { ArticleData } from '../types';
+import { Article } from '../types';
 
-const articles: ArticleData[] = [
+export const ARTICLES: Article[] = [
   {
     id: 10,
-    imgSrc: 'images/articles/10-aliento.jpg',
+    imgSrc: '/images/articles/10-aliento.jpg',
     imgAlt: 'Article image',
     imgAuthor: [],
     journal: {
@@ -29,7 +29,7 @@ const articles: ArticleData[] = [
   },
   {
     id: 9,
-    imgSrc: 'images/articles/09-tatuajes.jpg',
+    imgSrc: '/images/articles/09-tatuajes.jpg',
     imgAlt: 'Article image',
     imgAuthor: [
       {
@@ -60,7 +60,7 @@ const articles: ArticleData[] = [
   },
   {
     id: 0,
-    imgSrc: 'images/articles/00-simple-route.jpg',
+    imgSrc: '/images/articles/00-simple-route.jpg',
     imgAlt: 'Article image',
     imgAuthor: [
       {
@@ -100,7 +100,7 @@ const articles: ArticleData[] = [
   },
   {
     id: 1,
-    imgSrc: 'images/articles/01-pipes.jpg',
+    imgSrc: '/images/articles/01-pipes.jpg',
     imgAlt: 'Article image',
     imgAuthor: [
       {
@@ -139,7 +139,7 @@ const articles: ArticleData[] = [
   },
   {
     id: 2,
-    imgSrc: 'images/articles/02-prop-dielec.jpg',
+    imgSrc: '/images/articles/02-prop-dielec.jpg',
     imgAlt: 'Article image',
     imgAuthor: [
       {
@@ -170,7 +170,7 @@ const articles: ArticleData[] = [
   },
   {
     id: 3,
-    imgSrc: 'images/articles/03-nano-pal.jpg',
+    imgSrc: '/images/articles/03-nano-pal.jpg',
     imgAlt: 'Article image',
     imgAuthor: [],
     journal: {
@@ -216,7 +216,7 @@ const articles: ArticleData[] = [
   },
   {
     id: 4,
-    imgSrc: 'images/articles/04-nano-hidro.jpg',
+    imgSrc: '/images/articles/04-nano-hidro.jpg',
     imgAlt: 'Article image',
     imgAuthor: [],
     journal: {
@@ -257,7 +257,7 @@ const articles: ArticleData[] = [
   },
   {
     id: 5,
-    imgSrc: 'images/articles/05-print-photo.jpg',
+    imgSrc: '/images/articles/05-print-photo.jpg',
     imgAlt: 'Article image',
     imgAuthor: [],
     journal: {
@@ -288,7 +288,7 @@ const articles: ArticleData[] = [
   },
   {
     id: 6,
-    imgSrc: 'images/articles/06-based-photo.jpg',
+    imgSrc: '/images/articles/06-based-photo.jpg',
     imgAlt: 'Article image',
     imgAuthor: [
       {
@@ -326,7 +326,7 @@ const articles: ArticleData[] = [
   },
   {
     id: 7,
-    imgSrc: 'images/articles/07-size-mini.jpg',
+    imgSrc: '/images/articles/07-size-mini.jpg',
     imgAlt: 'Article image',
     imgAuthor: [
       {
@@ -364,7 +364,7 @@ const articles: ArticleData[] = [
   },
   {
     id: 8,
-    imgSrc: 'images/articles/08-elect-perf.jpg',
+    imgSrc: '/images/articles/08-elect-perf.jpg',
     imgAlt: 'Article image',
     imgAuthor: [
       {
@@ -398,6 +398,4 @@ const articles: ArticleData[] = [
       date: 'Jan, 2025'
     }
   }
-];
-
-export default articles.reverse();
+].reverse();

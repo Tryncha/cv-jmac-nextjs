@@ -54,5 +54,15 @@
       "presentations": "Presentations",
       "media": "Media"
     }
+  },
+  "ImageZoom": {
+    "designedBy": "Image designed by"
+  },
+  "Media": {
+    "podcastsTitle": "Podcasts",
+    "originalEpisode": "Original episode of",
+    "availableOn": "Available on",
+    "copyright": "All rights reserved.",
+    "videosTitle": "Videos"
   }
 }

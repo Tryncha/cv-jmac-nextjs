@@ -115,3 +115,78 @@ export interface Investigation {
   es: LocaleInvestigation;
   en: LocaleInvestigation;
 }
+
+export type PresentationPageTab = 'articles' | 'presentations' | 'media';
+
+export interface Impact {
+  jm?: string;
+  sjr?: string;
+  jcr?: string;
+}
+
+export interface Journal {
+  name: string;
+  url: string;
+}
+
+export interface ImgAuthor {
+  name: string;
+  url: string;
+}
+
+export interface LocaleArticle {
+  title: string;
+  abstract: string;
+  keywords: string[];
+  date: string;
+}
+
+export interface Article {
+  id: number;
+  imgSrc: string;
+  imgAlt: string;
+  imgAuthor: ImgAuthor[];
+  journal: Journal;
+  authors: string[];
+  doi: string;
+  url?: string;
+  impact?: Impact;
+  es: LocaleArticle;
+  en: LocaleArticle;
+}
+
+export interface LocalePresentation {
+  title: string;
+  institution: string;
+  conference: string;
+  type: string;
+  city: string;
+  date: string;
+}
+
+export interface Presentation {
+  id: number;
+  imgSrc: string;
+  imgAlt: string;
+  imgAuthor: ImgAuthor[];
+  es: LocalePresentation;
+  en: LocalePresentation;
+}
+
+export interface LocalePodcast {
+  chapter: string;
+  imgAlt: string;
+  podcast: string;
+  owner: string;
+  description: string;
+  date: string;
+  duration: string;
+  languages: string[];
+}
+
+export interface Podcast {
+  id: number;
+  imgSrc: string;
+  es: LocalePodcast;
+  en: LocalePodcast;
+}

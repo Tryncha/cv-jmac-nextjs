@@ -1,9 +1,9 @@
-import type { PodcastData } from '../types';
+import { Podcast } from '../types';
 
-const podcasts: PodcastData[] = [
+export const PODCASTS: Podcast[] = [
   {
     id: 0,
-    imgSrc: 'images/podcasts/investiga.jpg',
+    imgSrc: '/images/podcasts/investiga.jpg',
     es: {
       chapter: 'Cada paso cuenta, en Investiga, que no es poco',
       imgAlt: 'Cada paso cuenta, en Investiga, que no es poco',
@@ -27,6 +27,4 @@ const podcasts: PodcastData[] = [
       languages: ['Spanish']
     }
   }
-];
-
-export default podcasts;
+].reverse();
