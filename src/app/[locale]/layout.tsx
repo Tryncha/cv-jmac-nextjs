@@ -1,5 +1,4 @@
-import { hasLocale, NextIntlClientProvider } from 'next-intl';
-import { Metadata } from 'next';
+import { hasLocale, Locale, NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/src/i18n/routing';
 import { notFound } from 'next/navigation';
 import { workSans } from '@/src/lib/fonts';
@@ -10,11 +9,19 @@ import LinksNavbar from '@/src/components/links-navbar';
 import Providers from '@/src/components/providers';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { getTranslations } from 'next-intl/server';
+import { Metadata } from 'next';
 import '../globals.css';
 
-export const metadata: Metadata = {
-  title: 'CV - Jhon Mauricio Aguirre Cortés'
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale: locale as Locale, namespace: 'Metadata' });
+
+  return {
+    title: t('title'),
+    description: t('description')
+  };
+}
 
 const RootLayout = async ({ children, params }: { children: React.ReactNode; params: Promise<{ locale: string }> }) => {
   const { locale } = await params;
