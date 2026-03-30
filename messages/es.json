@@ -87,7 +87,10 @@
     }
   },
   "Metadata": {
-    "title": "CV - Jhon Mauricio Aguirre Cortés",
-    "description": "Soy investigador posdoctoral en la UCLM, donde colaboro en proyectos enfocados en el desarrollo de sensores electroquímicos de bajo coste para la detección de gases contaminantes. Mi trabajo se centra en la síntesis, modificación y caracterización de materiales nanoestructurados como óxido de grafeno, nanotubos de carbono y óxidos mixtos de cerio y praseodimio, aplicados a sistemas de monitoreo ambiental."
+    "title": "CV - Jhon Mauricio Aguirre Cortés | ES",
+    "description": "Soy investigador posdoctoral en la UCLM, donde colaboro en proyectos enfocados en el desarrollo de sensores electroquímicos de bajo coste para la detección de gases contaminantes. Mi trabajo se centra en la síntesis, modificación y caracterización de materiales nanoestructurados como óxido de grafeno, nanotubos de carbono y óxidos mixtos de cerio y praseodimio, aplicados a sistemas de monitoreo ambiental.",
+    "lightmirror": {
+      "title": "Light Mirror"
+    }
   }
 }

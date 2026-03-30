@@ -87,7 +87,10 @@
     }
   },
   "Metadata": {
-    "title": "CV - Jhon Mauricio Aguirre Cortés",
-    "description": "I am a postdoctoral researcher at UCLM, where I collaborate on projects focused on the development of low-cost electrochemical sensors for the detection of polluting gases. My work focuses on the synthesis, modification and characterization of nanostructured materials such as graphene oxide, carbon nanotubes and mixed oxides of cerium and praseodymium, applied to environmental monitoring systems."
+    "title": "CV - Jhon Mauricio Aguirre Cortés | EN",
+    "description": "I am a postdoctoral researcher at UCLM, where I collaborate on projects focused on the development of low-cost electrochemical sensors for the detection of polluting gases. My work focuses on the synthesis, modification and characterization of nanostructured materials such as graphene oxide, carbon nanotubes and mixed oxides of cerium and praseodymium, applied to environmental monitoring systems.",
+    "lightmirror": {
+      "title": "Light Mirror Tech"
+    }
   }
 }
