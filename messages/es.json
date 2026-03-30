@@ -78,5 +78,12 @@
     "copyEmail": "¡Dirección copiada!",
     "sendMail": "Enviar un correo",
     "links": "Conexiones académicas"
+  },
+  "LightMirror": {
+    "title": "Light Mirror Tech",
+    "aboutUs": {
+      "text": "Light Mirror Tech es un spin-off fundada por Jhon Mauricio Aguirre Cortés pionera en la fabricación de espejos para puntos ciegos de alta calidad. Actualmente dedica su atención a la transformación de la investigación científica en soluciones tecnológicas tangibles para la transición energética.",
+      "title": "Sobre nosotros"
+    }
   }
 }
