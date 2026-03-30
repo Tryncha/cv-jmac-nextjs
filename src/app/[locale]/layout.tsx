@@ -8,6 +8,8 @@ import Footer from '@/src/components/footer';
 import ScrollToTopButton from '@/src/components/scroll-to-top-button';
 import LinksNavbar from '@/src/components/links-navbar';
 import Providers from '@/src/components/providers';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import '../globals.css';
 
 export const metadata: Metadata = {
@@ -22,6 +24,8 @@ const RootLayout = async ({ children, params }: { children: React.ReactNode; par
 
   return (
     <html lang={locale}>
+      <Analytics />
+      <SpeedInsights />
       <body className={`${workSans.className} bg-slate-300 text-sm text-slate-800`}>
         <NextIntlClientProvider>
           <Providers>
