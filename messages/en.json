@@ -82,15 +82,49 @@
   "LightMirror": {
     "title": "Light Mirror Tech",
     "aboutUs": {
-      "text": "Light Mirror Tech is a spin-off founded by Jhon Mauricio Aguirre Cortés, a pioneer in the manufacture of high-quality blind spot mirrors. \nHe currently dedicates his attention to the transformation of scientific research into tangible technological solutions for the energy transition.",
+      "text": "Light Mirror Tech is a spin-off founded by <strong>Jhon Mauricio Aguirre Cortés</strong>, a pioneer in the manufacture of high-quality blind spot mirrors. \nHe currently dedicates his attention to the transformation of scientific research into tangible technological solutions for the energy transition.",
       "title": "About us"
+    },
+    "linkText": "Check out my spin-off!",
+    "origin": {
+      "title": "Origin and Motivation",
+      "text": " We were born out of the need to bridge the gap between scientific application and social impact in the fields of automotive mobility, advanced materials, and emerging energy sources."
+    },
+    "coreTech": {
+      "title": "Core Technology",
+      "item1": "Blind spot mirrors for the automotive sector",
+      "item2": "High-efficiency solar mirrors",
+      "item3": "Smart reflective surfaces",
+      "item4": "Advanced optical components"
+    },
+    "applications": {
+      "title": "Strategic Applications",
+      "item1": "Solar energy concentration",
+      "item2": "Hybrid photovoltaic-thermal systems",
+      "item3": "Green infrastructure and decarbonization",
+      "item4": "Automotive industry"
+    },
+    "impact": {
+      "title": "Environmental and Social Impact",
+      "text": "We dedicate our research to reducing dependence on fossil fuels and promoting sustainable technological development."
+    },
+    "businessModel": {
+      "title": "Business Model",
+      "item1": "Manufacturing and distribution of reflective surfaces",
+      "item2": "Technological innovation",
+      "item3": "Custom prototype development",
+      "item4": "R&D&I project development"
+    },
+    "status": {
+      "title": "Current Status and Next Steps",
+      "text": "Currently in the technological validation phase and prototype development. We are actively seeking strategic partners and pursuing intellectual property registration."
     }
   },
   "Metadata": {
     "title": "CV - Jhon Mauricio Aguirre Cortés | EN",
     "description": "I am a postdoctoral researcher at UCLM, where I collaborate on projects focused on the development of low-cost electrochemical sensors for the detection of polluting gases. My work focuses on the synthesis, modification and characterization of nanostructured materials such as graphene oxide, carbon nanotubes and mixed oxides of cerium and praseodymium, applied to environmental monitoring systems.",
     "lightmirror": {
-      "title": "Light Mirror Tech"
+      "title": "Light Mirror Tech. - Spin off"
     }
   }
 }

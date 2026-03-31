@@ -82,15 +82,49 @@
   "LightMirror": {
     "title": "Light Mirror Tech",
     "aboutUs": {
-      "text": "Light Mirror Tech es un spin-off fundada por Jhon Mauricio Aguirre Cortés pionera en la fabricación de espejos para puntos ciegos de alta calidad. Actualmente dedica su atención a la transformación de la investigación científica en soluciones tecnológicas tangibles para la transición energética.",
+      "text": "Light Mirror Tech es un spin-off fundada por <strong>Jhon Mauricio Aguirre Cortés</strong> pionera en la fabricación de espejos para puntos ciegos de alta calidad. Actualmente dedica su atención a la transformación de la investigación científica en soluciones tecnológicas tangibles para la transición energética.",
       "title": "Sobre nosotros"
+    },
+    "linkText": "¡Conoce sobre mi spin off!",
+    "origin": {
+      "title": "Origen y Motivación",
+      "text": "Nacemos de la necesidad de cerrar la brecha entre la aplicación científica y el impacto social en áreas de movilidad automotriz, materiales avanzados y fuentes de energía emergentes."
+    },
+    "coreTech": {
+      "title": "Tecnología Principal",
+      "item1": "Espejos para puntos ciegos en el área automotriz",
+      "item2": "Espejos solares de alta eficiencia",
+      "item3": "Superficies reflectantes inteligentes",
+      "item4": "Componentes ópticos avanzados"
+    },
+    "applications": {
+      "title": "Aplicaciones Estratégicas",
+      "item1": "Concentración de energía solar",
+      "item2": "Sistemas híbridos fotovoltaico-térmicos",
+      "item3": "Infraestructura verde y descarbonización",
+      "item4": "Industria automotriz"
+    },
+    "impact": {
+      "title": "Impacto Ambiental y Social",
+      "text": "Dedicamos nuestra investigación a reducir la dependencia de combustibles fósiles y promover un desarrollo tecnológico sostenible."
+    },
+    "businessModel": {
+      "title": "Modelo de Negocio",
+      "item1": "Fabricación y distirbución de superficies reflectantes",
+      "item2": "Innovación tecnológica",
+      "item3": "Creación de prototipos a medida",
+      "item4": "Desarrollo de proyectos I+D+i"
+    },
+    "status": {
+      "title": "Estado Actual y Próximos Pasos",
+      "text": "Actualmente en fase de validación tecnológica y desarrollo de prototipos. Buscamos activamente socios estratégicos y en registro de propiedad intelectual."
     }
   },
   "Metadata": {
     "title": "CV - Jhon Mauricio Aguirre Cortés | ES",
     "description": "Soy investigador posdoctoral en la UCLM, donde colaboro en proyectos enfocados en el desarrollo de sensores electroquímicos de bajo coste para la detección de gases contaminantes. Mi trabajo se centra en la síntesis, modificación y caracterización de materiales nanoestructurados como óxido de grafeno, nanotubos de carbono y óxidos mixtos de cerio y praseodimio, aplicados a sistemas de monitoreo ambiental.",
     "lightmirror": {
-      "title": "Light Mirror"
+      "title": "Light Mirror Tech. - Spin off"
     }
   }
 }

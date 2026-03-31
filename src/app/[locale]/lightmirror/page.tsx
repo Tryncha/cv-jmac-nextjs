@@ -33,7 +33,9 @@ const LightMirrorPage = async () => {
               />
             </div>
             <p className="text-sm font-medium sm:max-w-2xl sm:text-base lg:max-w-4xl">
-              {t('LightMirror.aboutUs.text')}
+              {t.rich('LightMirror.aboutUs.text', {
+                strong: (chunks) => <strong>{chunks}</strong>
+              })}
             </p>
           </div>
 
@@ -53,52 +55,43 @@ const LightMirrorPage = async () => {
       <Carrousel className="my-12" />
 
       <section className="grid grid-cols-1 gap-4 px-2 pt-4 pb-16 sm:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:px-12">
-        <Card title="Origen y Motivación">
-          <p>
-            Nacemos de la necesidad de cerrar la brecha entre la aplicación científica y el impacto social en áreas de
-            movilidad automotriz, materiales avanzados y fuentes de energía emergentes.
-          </p>
+        <Card title={t('LightMirror.origin.title')}>
+          <p>{t('LightMirror.origin.text')}</p>
         </Card>
 
-        <Card title="Tecnología Principal">
+        <Card title={t('LightMirror.coreTech.title')}>
           <ul className="ml-5 list-disc">
-            <li>Espejos para puntos ciegos en el área automotriz</li>
-            <li>Espejos solares de alta eficiencia</li>
-            <li>Superficies reflectantes inteligentes</li>
-            <li>Componentes ópticos avanzados</li>
+            <li>{t('LightMirror.coreTech.item1')}</li>
+            <li>{t('LightMirror.coreTech.item2')}</li>
+            <li>{t('LightMirror.coreTech.item3')}</li>
+            <li>{t('LightMirror.coreTech.item4')}</li>
           </ul>
         </Card>
 
-        <Card title="Aplicaciones Estratégicas">
+        <Card title={t('LightMirror.applications.title')}>
           <ul className="ml-5 list-disc">
-            <li>Concentración de energía solar</li>
-            <li>Sistemas híbridos fotovoltaico-térmicos</li>
-            <li>Infraestructura verde y descarbonización</li>
-            <li>Industria automotriz</li>
+            <li>{t('LightMirror.applications.item1')}</li>
+            <li>{t('LightMirror.applications.item2')}</li>
+            <li>{t('LightMirror.applications.item3')}</li>
+            <li>{t('LightMirror.applications.item4')}</li>
           </ul>
         </Card>
 
-        <Card title="Impacto Ambiental y Social">
-          <p>
-            Dedicamos nuestra investigación a reducir la dependencia de combustibles fósiles y promover un desarrollo
-            tecnológico sostenible.
-          </p>
+        <Card title={t('LightMirror.impact.title')}>
+          <p>{t('LightMirror.impact.text')}</p>
         </Card>
 
-        <Card title="Modelo de Negocio">
+        <Card title={t('LightMirror.businessModel.title')}>
           <ul className="ml-5 list-disc">
-            <li>Fabricación y distirbución de superficies reflectantes</li>
-            <li>Innovación tecnológica</li>
-            <li>Creación de prototipos a medida</li>
-            <li>Desarrollo de proyectos I+D+i</li>
+            <li>{t('LightMirror.businessModel.item1')}</li>
+            <li>{t('LightMirror.businessModel.item2')}</li>
+            <li>{t('LightMirror.businessModel.item3')}</li>
+            <li>{t('LightMirror.businessModel.item4')}</li>
           </ul>
         </Card>
 
-        <Card title="Estado Actual y Próximos Pasos">
-          <p>
-            Actualmente en fase de validación tecnológica y desarrollo de prototipos. Buscamos activamente socios
-            estratégicos y en registro de propiedad intelectual.
-          </p>
+        <Card title={t('LightMirror.status.title')}>
+          <p>{t('LightMirror.status.text')}</p>
         </Card>
       </section>
     </main>
