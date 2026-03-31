@@ -1,3 +1,6 @@
+'use client';
+
+import Image from 'next/image';
 import { useState } from 'react';
 
 const CARROUSEL_IMGS = [
@@ -35,7 +38,7 @@ const CARROUSEL_IMGS = [
   }
 ];
 
-const Carrousel = () => {
+const Carrousel = ({ className }: { className?: string }) => {
   const [index, setIndex] = useState(0);
 
   function showPreviousImage() {
@@ -47,21 +50,25 @@ const Carrousel = () => {
   }
 
   return (
-    <div className="flex justify-center gap-2">
+    <section className={`${className} flex justify-center gap-2`}>
       <div
         onClick={showPreviousImage}
         className="relative left-10 flex size-96 scale-90 items-center justify-center bg-white object-contain opacity-50"
       >
-        <img
+        <Image
           src={CARROUSEL_IMGS[index === 0 ? CARROUSEL_IMGS.length - 1 : index - 1].src}
           alt={CARROUSEL_IMGS[index === 0 ? CARROUSEL_IMGS.length - 1 : index - 1].alt}
+          width={384}
+          height={384}
           className="rounded-sm"
         />
       </div>
       <div className="z-20 flex size-96 items-center justify-center bg-white object-contain">
-        <img
+        <Image
           src={CARROUSEL_IMGS[index].src}
           alt={CARROUSEL_IMGS[index].alt}
+          width={384}
+          height={384}
           className="rounded-sm"
         />
       </div>
@@ -69,13 +76,15 @@ const Carrousel = () => {
         onClick={showNextImage}
         className="relative right-10 flex size-96 scale-90 items-center justify-center bg-white object-contain opacity-50"
       >
-        <img
+        <Image
           src={CARROUSEL_IMGS[index === CARROUSEL_IMGS.length - 1 ? 0 : index + 1].src}
           alt={CARROUSEL_IMGS[index === CARROUSEL_IMGS.length - 1 ? 0 : index + 1].alt}
+          width={384}
+          height={384}
           className="rounded-sm"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
