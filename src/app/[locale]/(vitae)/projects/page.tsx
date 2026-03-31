@@ -1,5 +1,11 @@
-import Investigation from '@/src/components/investigation';
-import ScienceProjects from '@/src/components/science-projects';
+import Investigation from '@/src/components/sections/investigation';
+import ScienceProjects from '@/src/components/sections/science-projects';
+
+//  sm:  px-4, pt-18
+//  md: pt-36, pb-8
+//  lg: pt-36, pb-8
+//  xl: px-12, pt-32, mx-12
+// 2xl: px-12, pt-32, mx-12
 
 const ProjectsPage = () => {
   return (

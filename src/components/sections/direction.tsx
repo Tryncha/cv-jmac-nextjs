@@ -1,7 +1,7 @@
-import { DIRECTION } from '../data/direction';
-import { getIntlConfig } from '../lib/utils';
-import Details from './details';
-import Separator from './separator';
+import { getIntlConfig } from '@/src/lib/utils';
+import Details from '../details';
+import { DIRECTION } from '@/src/data/direction';
+import Separator from '../separator';
 
 const Direction = async () => {
   const { t, locale } = await getIntlConfig();

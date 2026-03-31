@@ -1,6 +1,4 @@
-interface IconProps {
-  size: string;
-}
+import { IconProps } from '@/src/types';
 
 export const XIcon = ({ size }: IconProps) => {
   return (

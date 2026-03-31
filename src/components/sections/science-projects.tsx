@@ -1,7 +1,7 @@
-import { LocaleProject } from '../types';
-import { getIntlConfig } from '../lib/utils';
-import { PROJECTS } from '../data/projects';
-import Separator from './separator';
+import { LocaleProject } from '../../types';
+import { getIntlConfig } from '../../lib/utils';
+import { PROJECTS } from '../../data/projects';
+import Separator from '../separator';
 
 const ScienceProjectItem = ({ project }: { project: LocaleProject }) => {
   const { title, institution, city, description } = project;

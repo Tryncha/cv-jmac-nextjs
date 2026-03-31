@@ -1,7 +1,7 @@
-import { getIntlConfig } from '../lib/utils';
-import { WORK_EXPERIENCE } from '../data-old/work-experience';
-import Details from './details';
-import Separator from './separator';
+import { getIntlConfig } from '../../lib/utils';
+import { WORK_EXPERIENCE } from '../../data/work-experience';
+import Details from '../details';
+import Separator from '../separator';
 
 const WorkExperience = async () => {
   const { t, locale } = await getIntlConfig();

@@ -1,8 +1,8 @@
-import { LocaleOtherStudy, LocaleStudy } from '../types';
-import { GRADUATES, MAIN_STUDIES, OTHER_STUDIES } from '../data-old/studies';
-import Details from './details';
-import AwardText from './award-text';
-import { getIntlConfig } from '../lib/utils';
+import { LocaleOtherStudy, LocaleStudy } from '../../types';
+import { GRADUATES, MAIN_STUDIES, OTHER_STUDIES } from '../../data/studies';
+import Details from '../details';
+import AwardText from '../award-text';
+import { getIntlConfig } from '../../lib/utils';
 
 const MainStudy = async ({ study }: { study: LocaleStudy }) => {
   const { t } = await getIntlConfig();

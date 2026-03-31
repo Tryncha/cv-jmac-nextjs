@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { PRESENTATIONS } from '../data/presentations';
-import { useIntlConfig } from '../lib/utils';
-import { Presentation } from '../types';
-import ZoomableImage from './zoomable-image';
+import { PRESENTATIONS } from '../../data/presentations';
+import { useIntlConfig } from '../../lib/utils';
+import { Presentation } from '../../types';
+import ZoomableImage from '../zoomable-image';
 
 const PresentationItem = ({ presentation }: { presentation: Presentation }) => {
   const { locale } = useIntlConfig();

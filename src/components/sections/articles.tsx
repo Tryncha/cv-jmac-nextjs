@@ -1,9 +1,9 @@
+import { useIntlConfig } from '@/src/lib/utils';
+import { Article, Impact } from '@/src/types';
 import Image from 'next/image';
-import { Article, Impact } from '../types';
-import { ARTICLES } from '../data/articles';
-import { useIntlConfig } from '../lib/utils';
-import ZoomableImage from './zoomable-image';
 import { useState } from 'react';
+import ZoomableImage from '../zoomable-image';
+import { ARTICLES } from '@/src/data/articles';
 
 const JOURNALS = {
   jm: 'Journal Metrics',

@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import { useIntlConfig } from '@/src/lib/utils';
 import { PresentationPageTab } from '@/src/types';
-import Articles from '@/src/components/articles';
-import Presentations from '@/src/components/presentations';
-import Media from '@/src/components/media';
+import Articles from '@/src/components/sections/articles';
+import Presentations from '@/src/components/sections/presentations';
+import Media from '@/src/components/sections/media';
 
 const PublicationsPage = () => {
   const { t } = useIntlConfig();
@@ -17,6 +17,12 @@ const PublicationsPage = () => {
     { label: t('Publications.tabs.presentations'), value: 'presentations' },
     { label: t('Publications.tabs.media'), value: 'media' }
   ];
+
+  //  sm:  px-4, pt-18
+  //  md: pt-36, pb-8
+  //  lg: pt-36, pb-8
+  //  xl: px-12, pt-32, mx-12
+  // 2xl: px-12, pt-32, mx-12
 
   return (
     <main className="flex flex-col gap-4 border-x border-slate-300 bg-white pt-28 pb-16 shadow-sm sm:px-4 sm:pt-18 md:pt-36 md:pb-8 xl:mx-12 xl:px-12 xl:pt-32">

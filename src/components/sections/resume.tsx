@@ -1,5 +1,5 @@
-import { RESUME } from '../data-old/resume';
-import { getIntlConfig } from '../lib/utils';
+import { RESUME } from '../../data/resume';
+import { getIntlConfig } from '../../lib/utils';
 
 const Resume = async () => {
   const { t, locale } = await getIntlConfig();

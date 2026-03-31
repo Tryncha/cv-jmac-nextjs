@@ -1,8 +1,14 @@
-import Resume from '@/src/components/resume';
-import Studies from '@/src/components/studies';
-import WorkExperience from '@/src/components/work-experience';
-import Direction from '@/src/components/direction';
-import Participation from '@/src/components/participation';
+import Resume from '@/src/components/sections/resume';
+import Studies from '@/src/components/sections/studies';
+import WorkExperience from '@/src/components/sections/work-experience';
+import Direction from '@/src/components/sections/direction';
+import Participation from '@/src/components/sections/participation';
+
+//  sm:  px-4, pt-18
+//  md: pt-36, pb-8
+//  lg: pt-36, pb-8
+//  xl: px-12, pt-32, mx-12
+// 2xl: px-12, pt-32, mx-12
 
 const HomePage = () => {
   return (

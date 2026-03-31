@@ -1,7 +1,7 @@
-import { PARTICIPATION } from '../data/participation';
-import { getIntlConfig } from '../lib/utils';
-import Details from './details';
-import Separator from './separator';
+import { PARTICIPATION } from '../../data/participation';
+import { getIntlConfig } from '../../lib/utils';
+import Details from '../details';
+import Separator from '../separator';
 
 const Participation = async () => {
   const { t, locale } = await getIntlConfig();

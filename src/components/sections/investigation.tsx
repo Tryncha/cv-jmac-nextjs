@@ -1,7 +1,7 @@
 import React from 'react';
-import { getIntlConfig } from '../lib/utils';
-import { INVESTIGATION } from '../data/investigation';
-import Separator from './separator';
+import { getIntlConfig } from '../../lib/utils';
+import { INVESTIGATION } from '../../data/investigation';
+import Separator from '../separator';
 
 const Investigation = async () => {
   const { t, locale } = await getIntlConfig();

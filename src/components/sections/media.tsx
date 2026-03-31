@@ -1,5 +1,5 @@
-import { PODCASTS } from '../data/podcasts';
-import { useIntlConfig } from '../lib/utils';
+import { PODCASTS } from '../../data/podcasts';
+import { useIntlConfig } from '../../lib/utils';
 
 const Podcasts = () => {
   const { t, locale } = useIntlConfig();

@@ -190,3 +190,7 @@ export interface Podcast {
   es: LocalePodcast;
   en: LocalePodcast;
 }
+
+export interface IconProps {
+  size: number | string;
+}
