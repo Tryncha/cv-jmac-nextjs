@@ -1,14 +1,28 @@
+import {
+  BlueSkyIcon,
+  CVLacIcon,
+  LinkedInIcon,
+  OrcidIcon,
+  ResearchGateIcon,
+  ScholarIcon,
+  ScopusIcon,
+  XIcon
+} from '@/src/components/icons/social-icons';
+import { IconProps } from '../types';
+import { JSX } from 'react';
+
 interface ContactData {
   id: string;
   name: string;
 }
 
-interface SocialMedia extends ContactData {
+export interface SocialMedia extends ContactData {
   url: string;
   type: 'social-media';
+  Icon: (props: IconProps) => JSX.Element;
 }
 
-interface Email extends ContactData {
+export interface Email extends ContactData {
   institutionUrl: string;
   institutionLogo: string;
   emailAddress: string;
@@ -20,49 +34,57 @@ export const CONTACT: Array<SocialMedia | Email> = [
     id: 'twitter/x',
     name: 'Twitter/X',
     type: 'social-media',
-    url: 'https://x.com/JhonMAguirreC'
+    url: 'https://x.com/JhonMAguirreC',
+    Icon: XIcon
   },
   {
     id: 'linkedin',
     name: 'LinkedIn',
     type: 'social-media',
-    url: 'https://www.linkedin.com/in/jhon-mauricio-aguirre-cort%C3%A9s-b0452427b/'
+    url: 'https://www.linkedin.com/in/jhon-mauricio-aguirre-cort%C3%A9s-b0452427b/',
+    Icon: LinkedInIcon
   },
   {
     id: 'bluesky',
     name: 'BlueSky',
     type: 'social-media',
-    url: 'https://bsky.app/profile/jmacor7.bsky.social'
+    url: 'https://bsky.app/profile/jmacor7.bsky.social',
+    Icon: BlueSkyIcon
   },
   {
     id: 'google-scholar',
     name: 'Google Scholar',
     type: 'social-media',
-    url: 'https://scholar.google.com/citations?user=Srkl6pcAAAAJ&hl=en&oi=ao'
+    url: 'https://scholar.google.com/citations?user=Srkl6pcAAAAJ&hl=en&oi=ao',
+    Icon: ScholarIcon
   },
   {
     id: 'cvlac',
     name: 'CvLAC',
     type: 'social-media',
-    url: 'https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000462837'
+    url: 'https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000462837',
+    Icon: CVLacIcon
   },
   {
     id: 'research-gate',
     name: 'Research Gate',
     type: 'social-media',
-    url: 'https://www.researchgate.net/profile/Jhon-Aguirre-Cortes'
+    url: 'https://www.researchgate.net/profile/Jhon-Aguirre-Cortes',
+    Icon: ResearchGateIcon
   },
   {
     id: 'scopus',
     name: 'Scopus',
     type: 'social-media',
-    url: 'https://www.scopus.com/authid/detail.uri?authorId=57195378601&origin=AuthorProfile'
+    url: 'https://www.scopus.com/authid/detail.uri?authorId=57195378601&origin=AuthorProfile',
+    Icon: ScopusIcon
   },
   {
     id: 'orcid',
     name: 'ORCID',
     type: 'social-media',
-    url: 'https://orcid.org/0000-0002-9700-3544'
+    url: 'https://orcid.org/0000-0002-9700-3544',
+    Icon: OrcidIcon
   },
   {
     id: 'unal',

@@ -1,28 +1,22 @@
 import EmailInfo from '@/src/components/email-info';
-import {
-  BlueSkyIcon,
-  CVLacIcon,
-  LinkedInIcon,
-  OrcidIcon,
-  ResearchGateIcon,
-  ScholarIcon,
-  ScopusIcon,
-  XIcon
-} from '@/src/components/icons/social-icons';
+import type { SocialMedia } from '@/src/data/contact';
 import { CONTACT } from '@/src/data/contact';
 import { getIntlConfig } from '@/src/lib/utils';
-import { JSX } from 'react';
 
-const ICON_SIZE = 70;
-const socialIcons: Record<string, JSX.Element> = {
-  'twitter/x': <XIcon size={ICON_SIZE} />,
-  'linkedin': <LinkedInIcon size={ICON_SIZE} />,
-  'bluesky': <BlueSkyIcon size={ICON_SIZE} />,
-  'google-scholar': <ScholarIcon size={ICON_SIZE} />,
-  'cvlac': <CVLacIcon size={ICON_SIZE} />,
-  'research-gate': <ResearchGateIcon size={ICON_SIZE} />,
-  'scopus': <ScopusIcon size={ICON_SIZE} />,
-  'orcid': <OrcidIcon size={ICON_SIZE} />
+const SocialMediaContainer = ({ contact }: { contact: SocialMedia }) => {
+  return (
+    <a
+      href={contact.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex flex-col items-center gap-4 py-2 hover:rounded-sm hover:bg-slate-50"
+    >
+      <contact.Icon size={70} />
+      <span className="text-lg font-semibold text-blue-800 underline transition-colors hover:text-blue-600">
+        {contact.name}
+      </span>
+    </a>
+  );
 };
 
 const ContactPage = async () => {
@@ -59,18 +53,10 @@ const ContactPage = async () => {
           <hr className="my-2 border-slate-300" />
           <div className="grid grid-cols-2">
             {CONTACT.filter((c) => c.type === 'social-media').map((c) => (
-              <a
+              <SocialMediaContainer
                 key={c.id}
-                className="flex flex-col items-center gap-4 py-2 hover:rounded-sm hover:bg-slate-50"
-                href={c.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {socialIcons[c.id]}
-                <span className="text-lg font-semibold text-blue-800 underline transition-colors hover:text-blue-600">
-                  {c.name}
-                </span>
-              </a>
+                contact={c}
+              />
             ))}
           </div>
         </section>
