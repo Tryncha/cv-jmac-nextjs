@@ -157,5 +157,22 @@ export const DIRECTION: Direction[] = [
       type: 'Degree in Chemistry',
       city: 'Granada, Spain'
     }
+  },
+  {
+    id: 9,
+    es: {
+      name: 'Sensores y biosensores para el diagnóstico del cáncer de pulmón a través del aliento',
+      institution: 'Universidad de Castilla La-Mancha (UCLM)',
+      student: 'Lucía Fernández Martín',
+      type: 'Grado en Biotecnología',
+      city: 'Castilla La-Mancha, España'
+    },
+    en: {
+      name: 'Sensors and biosensors for the diagnosis of lung cancer throught the breath',
+      institution: 'University of Castilla La-Mancha (UCLM)',
+      student: 'Lucía Fernández Martín',
+      type: 'Degree in Biotechnology',
+      city: 'Castilla La-Mancha, Spain'
+    }
   }
 ].reverse();
