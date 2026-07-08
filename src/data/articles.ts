@@ -2,6 +2,37 @@ import { Article } from '../types';
 
 export const ARTICLES: Article[] = [
   {
+    id: 11,
+    imgSrc: '/images/articles/11-ammonia.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [],
+    journal: {
+      name: 'Journal of Hazardous Materials',
+      url: 'https://www.sciencedirect.com/journal/journal-of-hazardous-materials'
+    },
+    authors: ['Aguirre, J.M.', 'Villa, M.', 'Baeza, M.', 'Solla, J.', 'Valero, E.'],
+    doi: '10.1016/j.jhazmat.2026.142932',
+    impact: {
+      jm: 'https://www.journalmetrics.org/journal/journal-of-hazardous-materials',
+      sjr: 'https://www.scimagojr.com/journalsearch.php?q=25858&tip=sid&clean=0',
+      jcr: 'https://jcr.clarivate.com/jcr-jp/journal-profile?journal=J%20HAZARD%20MATER&year=2025&fromPage=%2Fjcr%2Fsearch-results'
+    },
+    es: {
+      title: 'Highly sensitive ammonia sensing at room temperature with Ce/Pr Mixed Oxide/Oxidized MWCNT composite',
+      abstract:
+        'Ammonia is a hazardous atmospheric pollutant of major industrial relevance, yet reliable room-temperature (RT) detection in real conditions remains challenging for conventional metal-oxide sensors due to high operating temperatures, poor sensitivity and selectivity, humidity effects and limited real air validation.',
+      keywords: ['Ce', 'Pr Materials', 'Nanotubes', 'Ammonia sensor', 'Gas experiments'],
+      date: 'Jul, 2026'
+    },
+    en: {
+      title: 'Highly sensitive ammonia sensing at room temperature with Ce/Pr Mixed Oxide/Oxidized MWCNT composite',
+      abstract:
+        'Ammonia is a hazardous atmospheric pollutant of major industrial relevance, yet reliable room-temperature (RT) detection in real conditions remains challenging for conventional metal-oxide sensors due to high operating temperatures, poor sensitivity and selectivity, humidity effects and limited real air validation.',
+      keywords: ['Ce', 'Pr Materials', 'Nanotubes', 'Ammonia sensor', 'Gas experiments'],
+      date: 'Jul, 2026'
+    }
+  },
+  {
     id: 10,
     imgSrc: '/images/articles/10-aliento.jpg',
     imgAlt: 'Article image',
@@ -20,7 +51,7 @@ export const ARTICLES: Article[] = [
       date: 'Feb, 2026'
     },
     en: {
-      title: 'Tatuajes que salvarán vidas',
+      title: 'Lo que el aliento puede decir de nuestra salud',
       abstract:
         'Aunque invisible al ojo humano, el aliento es un espejo de lo que ocurre a diario en nuestro cuerpo y puede indicar la presencia de enfermedad. La breatómica es la nueva ciencia que lo estudia.',
       keywords: [],
