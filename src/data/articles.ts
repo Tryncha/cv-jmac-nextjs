@@ -2,63 +2,6 @@ import { Article } from '../types';
 
 export const ARTICLES: Article[] = [
   {
-    id: 10,
-    imgSrc: '/images/articles/10-aliento.jpg',
-    imgAlt: 'Article image',
-    imgAuthor: [],
-    journal: {
-      name: 'The Conversation',
-      url: 'https://theconversation.com/us'
-    },
-    authors: ['Villa, M.', 'Aguirre, J.M.', 'Valero, E.'],
-    doi: '10.64628/AAO.pc95pckk9',
-    es: {
-      title: 'Lo que el aliento puede decir de nuestra salud',
-      abstract:
-        'Aunque invisible al ojo humano, el aliento es un espejo de lo que ocurre a diario en nuestro cuerpo y puede indicar la presencia de enfermedad. La breatómica es la nueva ciencia que lo estudia.',
-      keywords: [],
-      date: 'Feb, 2026'
-    },
-    en: {
-      title: 'Lo que el aliento puede decir de nuestra salud',
-      abstract:
-        'Aunque invisible al ojo humano, el aliento es un espejo de lo que ocurre a diario en nuestro cuerpo y puede indicar la presencia de enfermedad. La breatómica es la nueva ciencia que lo estudia.',
-      keywords: [],
-      date: 'Feb, 2026'
-    }
-  },
-  {
-    id: 9,
-    imgSrc: '/images/articles/09-tatuajes.jpg',
-    imgAlt: 'Article image',
-    imgAuthor: [
-      {
-        name: 'Miriam Villa Díaz',
-        url: ''
-      }
-    ],
-    journal: {
-      name: 'The Conversation',
-      url: 'https://theconversation.com/us'
-    },
-    authors: ['Villa, M.', 'Aguirre, J.M.', 'Valero, E.'],
-    doi: '10.64628/AAO.urjgeqn5s',
-    es: {
-      title: 'Tatuajes que salvarán vidas',
-      abstract:
-        'Los tatuajes inteligentes redefinirán el cuidado de la salud con avances cada vez más visionarios. Estos dispositivos, que integrarán tintas biocompatibles en lugar de las convencionales, modificarán su color, emitirán señales fluorescentes y sincronizarán datos con aplicaciones móviles para transmitir mediciones en tiempo real. Se proyecta un futuro en el que estos tatuajes no solo vigilarán parámetros como la glucosa en sangre, sino que también intervendrán activamente para preservar vidas mediante una supervisión continua y no invasiva del estado de salud.',
-      keywords: ['tinta biocompatible', 'monitoreo en tiempo real', 'glucosa', 'aplicación móvil'],
-      date: 'May, 2025'
-    },
-    en: {
-      title: 'Tatuajes que salvarán vidas',
-      abstract:
-        'Los tatuajes inteligentes redefinirán el cuidado de la salud con avances cada vez más visionarios. Estos dispositivos, que integrarán tintas biocompatibles en lugar de las convencionales, modificarán su color, emitirán señales fluorescentes y sincronizarán datos con aplicaciones móviles para transmitir mediciones en tiempo real. Se proyecta un futuro en el que estos tatuajes no solo vigilarán parámetros como la glucosa en sangre, sino que también intervendrán activamente para preservar vidas mediante una supervisión continua y no invasiva del estado de salud.',
-      keywords: ['tinta biocompatible', 'monitoreo en tiempo real', 'glucosa', 'aplicación móvil'],
-      date: 'May, 2025'
-    }
-  },
-  {
     id: 0,
     imgSrc: '/images/articles/00-simple-route.jpg',
     imgAlt: 'Article image',
@@ -396,6 +339,63 @@ export const ARTICLES: Article[] = [
         'This work aims to explore the synthesis and electrical/structural characterization of hausmanite and bixbyite-type manganese oxides obtained via thermal oxidation. SEM was used for morphological analysis, while XPS characterized the chemical environments of Mn and O. Crystalline phases were identified using XRD and Rietveld refinement. Impedance spectroscopy provided insights into conductivity, supported by Nyquist plots, equivalent circuits, permittivity, and dielectric modulus to understand charge transport. Conductivity findings were validated through density functional theory (DFT) calculations, contributing to the understanding of conduction mechanisms relevant to catalytic potential.',
       keywords: ['refinement Rietveld', 'Nyquist plots', 'DFT calculation', 'espectroscopia de impedancia'],
       date: 'Jan, 2025'
+    }
+  },
+  {
+    id: 9,
+    imgSrc: '/images/articles/09-tatuajes.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [
+      {
+        name: 'Miriam Villa Díaz',
+        url: ''
+      }
+    ],
+    journal: {
+      name: 'The Conversation',
+      url: 'https://theconversation.com/us'
+    },
+    authors: ['Villa, M.', 'Aguirre, J.M.', 'Valero, E.'],
+    doi: '10.64628/AAO.urjgeqn5s',
+    es: {
+      title: 'Tatuajes que salvarán vidas',
+      abstract:
+        'Los tatuajes inteligentes redefinirán el cuidado de la salud con avances cada vez más visionarios. Estos dispositivos, que integrarán tintas biocompatibles en lugar de las convencionales, modificarán su color, emitirán señales fluorescentes y sincronizarán datos con aplicaciones móviles para transmitir mediciones en tiempo real. Se proyecta un futuro en el que estos tatuajes no solo vigilarán parámetros como la glucosa en sangre, sino que también intervendrán activamente para preservar vidas mediante una supervisión continua y no invasiva del estado de salud.',
+      keywords: ['tinta biocompatible', 'monitoreo en tiempo real', 'glucosa', 'aplicación móvil'],
+      date: 'May, 2025'
+    },
+    en: {
+      title: 'Tatuajes que salvarán vidas',
+      abstract:
+        'Los tatuajes inteligentes redefinirán el cuidado de la salud con avances cada vez más visionarios. Estos dispositivos, que integrarán tintas biocompatibles en lugar de las convencionales, modificarán su color, emitirán señales fluorescentes y sincronizarán datos con aplicaciones móviles para transmitir mediciones en tiempo real. Se proyecta un futuro en el que estos tatuajes no solo vigilarán parámetros como la glucosa en sangre, sino que también intervendrán activamente para preservar vidas mediante una supervisión continua y no invasiva del estado de salud.',
+      keywords: ['tinta biocompatible', 'monitoreo en tiempo real', 'glucosa', 'aplicación móvil'],
+      date: 'May, 2025'
+    }
+  },
+  {
+    id: 10,
+    imgSrc: '/images/articles/10-aliento.jpg',
+    imgAlt: 'Article image',
+    imgAuthor: [],
+    journal: {
+      name: 'The Conversation',
+      url: 'https://theconversation.com/us'
+    },
+    authors: ['Villa, M.', 'Aguirre, J.M.', 'Valero, E.'],
+    doi: '10.64628/AAO.pc95pckk9',
+    es: {
+      title: 'Lo que el aliento puede decir de nuestra salud',
+      abstract:
+        'Aunque invisible al ojo humano, el aliento es un espejo de lo que ocurre a diario en nuestro cuerpo y puede indicar la presencia de enfermedad. La breatómica es la nueva ciencia que lo estudia.',
+      keywords: [],
+      date: 'Feb, 2026'
+    },
+    en: {
+      title: 'Lo que el aliento puede decir de nuestra salud',
+      abstract:
+        'Aunque invisible al ojo humano, el aliento es un espejo de lo que ocurre a diario en nuestro cuerpo y puede indicar la presencia de enfermedad. La breatómica es la nueva ciencia que lo estudia.',
+      keywords: [],
+      date: 'Feb, 2026'
     }
   },
   {
