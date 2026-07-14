@@ -87,7 +87,7 @@ const Videos = () => {
             eficiencia energética, y se plantean futuras líneas de investigación que combinan impresión 3D con
             materiales microporosos para mejorar el rendimiento de catalizadores en entornos contaminados
           </p>
-          <span className="font-medium">
+          {/* <span className="font-medium">
             Enlace Original:{' '}
             <a
               href="https://www.youtube.com/watch?v=GjyXu3OyeBI"
@@ -97,7 +97,7 @@ const Videos = () => {
             >
               https://www.youtube.com/watch?v=GjyXu3OyeBI
             </a>
-          </span>
+          </span> */}
         </div>
         <div className="mr-4 hidden justify-center xl:flex">
           <iframe
